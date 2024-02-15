@@ -1,0 +1,22 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "pyimdb"
+version = "1.0.0"
+description = "Yet another pyimdb package"
+license = "GPL-3.0-only"
+authors = ["u2ly <76696f6c@proton.me>"]
+readme = "README.md"
+repository = "https://github.com/u2ly/pyimdb"
+keywords = ["imdb", "imdb-api", "graphql"]
+include = [
+    { path = "README.md", format = "sdist" },
+    { path = "LICENSE", format = "sdist" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+langcodes = { extras = ["data"], version = "^3.3.0" }
