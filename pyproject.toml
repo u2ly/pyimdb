@@ -17,6 +17,6 @@ include = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.9,<4.0"
 requests = "^2.31.0"
 langcodes = { extras = ["data"], version = "^3.3.0" }
